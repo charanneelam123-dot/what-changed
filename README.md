@@ -1,5 +1,7 @@
 # What changed?
 
+[![Checks](https://github.com/charanneelam123-dot/what-changed/actions/workflows/checks.yml/badge.svg)](https://github.com/charanneelam123-dot/what-changed/actions/workflows/checks.yml)
+
 A renewal arrives. The rent went up, but so did the notice period. A parking charge
 appeared halfway down the page. Comparing the two files by eye gets old quickly.
 
