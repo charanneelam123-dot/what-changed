@@ -49,6 +49,11 @@ autonomous agent. Adding more agents would not solve the alignment problem.
   and one unchanged. Two clauses have calculated price deltas.
 - No paid model calls were made. The request adapter and quote validation were
   exercised with mocked provider responses.
+- Built a wheel, installed it into a separate directory, and generated a report
+  from outside the source tree to check that the HTML template ships correctly.
+- Chrome browser checks passed for phrase search, empty search results, the
+  unchanged-clause filter, and checkbox reset after reload. The 390px mobile
+  viewport had no horizontal overflow; no browser script errors were reported.
 
 GitHub CI checks package installation as well as the tests. Its status is recorded
 on the repository, separately from the local results above.
