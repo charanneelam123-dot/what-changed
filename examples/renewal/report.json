@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "changes": [
+    {
+      "id": "change-1",
+      "title": "Maple Court agreement",
+      "status": "unchanged",
+      "old": {
+        "id": "old-1",
+        "title": "Maple Court agreement",
+        "text": "Fictional example for a software demonstration. These are not terms from a real lease.",
+        "start_line": 1,
+        "end_line": 4
+      },
+      "new": {
+        "id": "new-1",
+        "title": "Maple Court agreement",
+        "text": "Fictional example for a software demonstration. These are not terms from a real lease.",
+        "start_line": 1,
+        "end_line": 4
+      },
+      "match": "heading",
+      "moved": false,
+      "renamed": false,
+      "price": null,
+      "day_values": null
+    },
+    {
+      "id": "change-2",
+      "title": "Rent",
+      "status": "changed",
+      "old": {
+        "id": "old-2",
+        "title": "Rent",
+        "text": "Monthly rent is $1,450.00, due on the first day of each month.",
+        "start_line": 5,
+        "end_line": 7
+      },
+      "new": {
+        "id": "new-2",
+        "title": "Rent",
+        "text": "Monthly rent is $1,575.00, due on the first day of each month.",
+        "start_line": 5,
+        "end_line": 7
+      },
+      "match": "heading",
+      "moved": false,
+      "renamed": false,
+      "price": {
+        "before": "1450.00",
+        "after": "1575.00",
+        "delta": "125.00",
+        "basis": "month",
+        "annualized_delta": "1500.00",
+        "assumption": "Treats the single dollar amount as the clause price; check the quoted clause. Monthly annualization assumes 12 payments."
+      },
+      "day_values": null
+    },
+    {
+      "id": "change-3",
+      "title": "Parking",
+      "status": "changed",
+      "old": {
+        "id": "old-3",
+        "title": "Parking",
+        "text": "One parking space is included at no additional charge.",
+        "start_line": 8,
+        "end_line": 10
+      },
+      "new": {
+        "id": "new-3",
+        "title": "Parking",
+        "text": "One parking space is available for a monthly fee of $65.00.",
+        "start_line": 8,
+        "end_line": 10
+      },
+      "match": "heading",
+      "moved": false,
+      "renamed": false,
+      "price": null,
+      "day_values": null
+    },
+    {
+      "id": "change-4",
+      "title": "Notice before moving out",
+      "status": "changed",
+      "old": {
+        "id": "old-4",
+        "title": "Notice before moving out",
+        "text": "The resident must give written notice at least 30 days before moving out.",
+        "start_line": 11,
+        "end_line": 13
+      },
+      "new": {
+        "id": "new-4",
+        "title": "Notice before moving out",
+        "text": "The resident must give written notice at least 60 days before moving out.",
+        "start_line": 11,
+        "end_line": 13
+      },
+      "match": "heading",
+      "moved": false,
+      "renamed": false,
+      "price": null,
+      "day_values": {
+        "before": [
+          "30 days"
+        ],
+        "after": [
+          "60 days"
+        ]
+      }
+    },
+    {
+      "id": "change-5",
+      "title": "Repairs",
+      "status": "changed",
+      "old": {
+        "id": "old-5",
+        "title": "Repairs",
+        "text": "The owner will acknowledge a non-emergency repair request within 3 days.",
+        "start_line": 14,
+        "end_line": 16
+      },
+      "new": {
+        "id": "new-5",
+        "title": "Repairs",
+        "text": "The owner will acknowledge a non-emergency repair request within 7 days.",
+        "start_line": 14,
+        "end_line": 16
+      },
+      "match": "heading",
+      "moved": false,
+      "renamed": false,
+      "price": null,
+      "day_values": {
+        "before": [
+          "3 days"
+        ],
+        "after": [
+          "7 days"
+        ]
+      }
+    },
+    {
+      "id": "change-6",
+      "title": "Pets",
+      "status": "moved",
+      "old": {
+        "id": "old-8",
+        "title": "Pets",
+        "text": "One cat is permitted with written approval.",
+        "start_line": 23,
+        "end_line": 24
+      },
+      "new": {
+        "id": "new-6",
+        "title": "Pets",
+        "text": "One cat is permitted with written approval.",
+        "start_line": 17,
+        "end_line": 19
+      },
+      "match": "heading",
+      "moved": true,
+      "renamed": false,
+      "price": null,
+      "day_values": null
+    },
+    {
+      "id": "change-7",
+      "title": "Guests",
+      "status": "changed",
+      "old": {
+        "id": "old-6",
+        "title": "Guests",
+        "text": "Overnight guests may stay for up to 14 days in a calendar month.",
+        "start_line": 17,
+        "end_line": 19
+      },
+      "new": {
+        "id": "new-7",
+        "title": "Guests",
+        "text": "Overnight guests may stay for up to 7 days in a calendar month.",
+        "start_line": 20,
+        "end_line": 22
+      },
+      "match": "heading",
+      "moved": false,
+      "renamed": false,
+      "price": null,
+      "day_values": {
+        "before": [
+          "14 days"
+        ],
+        "after": [
+          "7 days"
+        ]
+      }
+    },
+    {
+      "id": "change-8",
+      "title": "Package service",
+      "status": "added",
+      "old": null,
+      "new": {
+        "id": "new-8",
+        "title": "Package service",
+        "text": "A monthly package service fee of $12.00 applies to the unit.",
+        "start_line": 23,
+        "end_line": 24
+      },
+      "match": "new clause",
+      "moved": false,
+      "renamed": false,
+      "price": {
+        "before": null,
+        "after": "12.00",
+        "delta": "12.00",
+        "basis": "month",
+        "annualized_delta": "144.00",
+        "assumption": "Treats the single dollar amount as the clause price; check the quoted clause. Monthly annualization assumes 12 payments."
+      },
+      "day_values": null
+    },
+    {
+      "id": "change-9",
+      "title": "Storage",
+      "status": "removed",
+      "old": {
+        "id": "old-7",
+        "title": "Storage",
+        "text": "The resident may use one storage locker at no additional charge.",
+        "start_line": 20,
+        "end_line": 22
+      },
+      "new": null,
+      "match": "unmatched old clause",
+      "moved": false,
+      "renamed": false,
+      "price": null,
+      "day_values": null
+    }
+  ],
+  "counts": {
+    "unchanged": 1,
+    "changed": 5,
+    "moved": 1,
+    "added": 1,
+    "removed": 1
+  },
+  "review": {
+    "mode": "off",
+    "notes": [],
+    "rejected": []
+  },
+  "documents": {
+    "old": {
+      "name": "before.md",
+      "sha256": "c20c644d173fb40302b896ee28d4403ea0afb894876d1a25f2aac878b7083c5c"
+    },
+    "new": {
+      "name": "after.md",
+      "sha256": "fcd9b609967b09a32cd739940e2e37cf2f9eea7d5f4979d07890ede2a537ffac"
+    }
+  }
+}

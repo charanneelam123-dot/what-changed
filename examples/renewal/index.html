@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>What changed? · Document comparison</title>
+<style>
+:root{--paper:#f5f3ec;--ink:#25382e;--muted:#637064;--line:#d8dbd1;--green:#315b43;--orange:#a45431;--white:#fffefa}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}header,main,footer{max-width:1100px;margin:auto;padding:0 32px}nav{display:flex;justify-content:space-between;gap:20px;padding:26px 0;border-bottom:1px solid var(--line)}.brand{font-weight:750;letter-spacing:-.7px;font-size:22px}.edition{font:12px/2.6 ui-monospace,monospace;color:var(--muted)}.hero{padding:52px 0 30px;display:grid;grid-template-columns:1.3fr 1fr;gap:60px;align-items:end}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:700;color:var(--orange)}h1{font:normal 58px/1.05 Georgia,serif;letter-spacing:-2px;margin:17px 0 24px}.intro{max-width:510px;color:var(--muted);font-size:16px}.documents{background:#e9ece3;border-left:3px solid var(--green);padding:22px 24px;margin-bottom:24px}.documents p{margin:0 0 12px;font-size:13px}.documents p:last-child{margin:0}.documents span{display:block;font:10px ui-monospace,monospace;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:4px}.metrics{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:12px 0 18px;padding:20px 0}.metric{padding-left:24px;border-left:1px solid var(--line)}.metric:first-child{padding-left:0;border-left:0}.metric b{font:36px Georgia,serif;display:block}.metric span{font-size:12px;color:var(--muted)}.privacy{font:11px/1.7 ui-monospace,monospace;color:var(--muted);padding-bottom:20px}.tools{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:20px 0}.tools label{font-size:13px}.tools input[type=search]{border:1px solid var(--line);padding:11px 14px;background:var(--white);font:inherit;border-radius:4px;flex:1;min-width:170px;color:var(--ink)}button{border:1px solid var(--line);padding:11px 16px;background:var(--white);color:var(--ink);border-radius:4px;font:inherit;font-size:13px;cursor:pointer}button:hover{border-color:var(--green)}input:focus,button:focus,summary:focus{outline:2px solid var(--green);outline-offset:3px}.result-count{font:11px ui-monospace,monospace;color:var(--muted);margin-bottom:20px}.change{background:var(--white);border:1px solid var(--line);border-radius:5px;padding:26px;margin-bottom:20px;break-inside:avoid}.change[hidden]{display:none}.card-heading{display:flex;justify-content:space-between;gap:18px;align-items:center}.status{font:10px ui-monospace,monospace;letter-spacing:1px;text-transform:uppercase;color:var(--orange)}.status.added{color:var(--green)}.status.unchanged,.status.moved{color:var(--muted)}h2{font:27px/1.3 Georgia,serif;margin:6px 0 12px}.reviewed{font-size:11px;color:var(--muted);white-space:nowrap}.reviewed input{accent-color:var(--green)}.facts{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.fact{font:11px/1.5 ui-monospace,monospace;background:#f5e9dc;color:#7b482c;padding:5px 9px;border-radius:3px}.fact.quiet{background:#edf0e8;color:var(--muted)}.versions{display:grid;grid-template-columns:1fr 1fr;gap:24px}.version{border-top:1px solid var(--line);min-width:0}.version:last-child{border-left:1px solid var(--line);padding-left:24px}.version h3{display:flex;justify-content:space-between;gap:10px;font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:600;margin:15px 0}.version h3 span{text-transform:none;letter-spacing:0;color:var(--muted);font-weight:400}.clause{font-size:14px;line-height:1.85;white-space:pre-wrap;overflow-wrap:anywhere;margin:0 0 12px}.empty p{font-size:13px;color:var(--muted);font-style:italic}del{background:#f5ddd2;color:#854b34;text-decoration-thickness:1px}ins{background:#dce9d8;color:#285738;text-decoration:none}.match{font-size:11px;color:var(--muted);margin-top:12px}.match p{margin:6px 0}.assumption{font-size:11px;color:var(--muted);margin:12px 0}.note{border-top:1px solid var(--line);padding-top:12px;font-size:13px}.note h3{font-size:11px;color:var(--muted);font-weight:500}.question{color:var(--green)}blockquote{white-space:pre-wrap;border-left:2px solid var(--line);margin-left:0;padding-left:14px}summary{cursor:pointer}footer{padding-top:24px;padding-bottom:44px;color:var(--muted);font-size:12px}footer p{max-width:850px}footer strong{font-weight:600;color:var(--ink)}.no-results{padding:36px 0;color:var(--muted)}
+@media(max-width:720px){header,main,footer{padding-left:20px;padding-right:20px}.hero{grid-template-columns:1fr;gap:8px;padding-top:30px}h1{font-size:44px}.documents{margin-bottom:0}.versions{grid-template-columns:1fr;gap:12px}.version:last-child{border-left:0;padding-left:0}.change{padding:20px}.metric{padding-left:16px}.metric b{font-size:30px}.edition{display:none}.card-heading{align-items:start}}
+@media print{body{background:white;font-size:12px}.tools,.reviewed,button,.match,.privacy{display:none}.hero{padding-top:20px}h1{font-size:36px}.change[hidden]{display:block}.change{box-shadow:none}.versions{grid-template-columns:1fr 1fr}footer{padding-bottom:10px}}
+</style>
+</head>
+<body>
+<header>
+<nav><span class="brand">what changed?</span><span class="edition">A SECOND LOOK / DOCUMENT COMPARISON</span></nav>
+<div class="hero"><div><div class="eyebrow">Before you sign again</div><h1>The renewal deserves<br>a second look.</h1><p class="intro">Read the edits beside the original wording. Check the numbers, then decide what to ask about.</p></div><div class="documents"><p><span>Before</span>before.md</p><p><span>After</span>after.md</p></div></div>
+<div class="metrics"><div class="metric"><b>8</b><span>clauses to review</span></div><div class="metric"><b>2</b><span>price changes calculated</span></div><div class="metric"><b>1</b><span>clauses unchanged</span></div></div>
+<p class="privacy">Local comparison. Model explanations are off; no documents were sent.</p>
+</header>
+<main>
+<div class="tools"><input type="search" id="search" aria-label="Find a clause" placeholder="Find a clause or a phrase…"><label><input id="unchanged" type="checkbox"> Show unchanged</label><button id="print" type="button">Print / save PDF</button></div>
+<p class="result-count" id="count" aria-live="polite"></p>
+<div id="changes"><article class="change" data-status="unchanged" id="change-1" hidden>
+          <div class="card-heading"><div><span class="status unchanged">unchanged</span>
+          <h2>Maple Court agreement</h2></div><label class="reviewed"><input type="checkbox"> Reviewed</label></div>
+          <div class="facts"></div>
+          <div class="versions"><section class="version"><h3>Before <span>Lines 1–4</span></h3><p class="clause">Fictional example for a software demonstration. These are not terms from a real lease.</p></section><section class="version"><h3>After <span>Lines 1–4</span></h3><p class="clause">Fictional example for a software demonstration. These are not terms from a real lease.</p></section></div>
+          
+          <details class="match"><summary>How these clauses were matched</summary><p>heading</p></details>
+        </article><article class="change" data-status="changed" id="change-2">
+          <div class="card-heading"><div><span class="status changed">changed</span>
+          <h2>Rent</h2></div><label class="reviewed"><input type="checkbox"> Reviewed</label></div>
+          <div class="facts"><span class="fact">+$125.00 / month</span><span class="fact quiet">+$1,500.00 over 12 payments</span></div>
+          <div class="versions"><section class="version"><h3>Before <span>Lines 5–7</span></h3><p class="clause">Monthly rent is <del>$1,450.00,</del> due on the first day of each month.</p></section><section class="version"><h3>After <span>Lines 5–7</span></h3><p class="clause">Monthly rent is <ins>$1,575.00,</ins> due on the first day of each month.</p></section></div>
+          <p class="assumption">Treats the single dollar amount as the clause price; check the quoted clause. Monthly annualization assumes 12 payments.</p>
+          <details class="match"><summary>How these clauses were matched</summary><p>heading</p></details>
+        </article><article class="change" data-status="changed" id="change-3">
+          <div class="card-heading"><div><span class="status changed">changed</span>
+          <h2>Parking</h2></div><label class="reviewed"><input type="checkbox"> Reviewed</label></div>
+          <div class="facts"></div>
+          <div class="versions"><section class="version"><h3>Before <span>Lines 8–10</span></h3><p class="clause">One parking space is <del>included</del> <del>at</del> <del>no</del> <del>additional</del> <del>charge.</del></p></section><section class="version"><h3>After <span>Lines 8–10</span></h3><p class="clause">One parking space is <ins>available</ins> <ins>for</ins> <ins>a</ins> <ins>monthly</ins> <ins>fee of $65.00.</ins></p></section></div>
+          
+          <details class="match"><summary>How these clauses were matched</summary><p>heading</p></details>
+        </article><article class="change" data-status="changed" id="change-4">
+          <div class="card-heading"><div><span class="status changed">changed</span>
+          <h2>Notice before moving out</h2></div><label class="reviewed"><input type="checkbox"> Reviewed</label></div>
+          <div class="facts"><span class="fact">30 days → 60 days</span></div>
+          <div class="versions"><section class="version"><h3>Before <span>Lines 11–13</span></h3><p class="clause">The resident must give written notice at least <del>30</del> days before moving out.</p></section><section class="version"><h3>After <span>Lines 11–13</span></h3><p class="clause">The resident must give written notice at least <ins>60</ins> days before moving out.</p></section></div>
+          
+          <details class="match"><summary>How these clauses were matched</summary><p>heading</p></details>
+        </article><article class="change" data-status="changed" id="change-5">
+          <div class="card-heading"><div><span class="status changed">changed</span>
+          <h2>Repairs</h2></div><label class="reviewed"><input type="checkbox"> Reviewed</label></div>
+          <div class="facts"><span class="fact">3 days → 7 days</span></div>
+          <div class="versions"><section class="version"><h3>Before <span>Lines 14–16</span></h3><p class="clause">The owner will acknowledge a non-emergency repair request within <del>3</del> days.</p></section><section class="version"><h3>After <span>Lines 14–16</span></h3><p class="clause">The owner will acknowledge a non-emergency repair request within <ins>7</ins> days.</p></section></div>
+          
+          <details class="match"><summary>How these clauses were matched</summary><p>heading</p></details>
+        </article><article class="change" data-status="moved" id="change-6">
+          <div class="card-heading"><div><span class="status moved">moved</span>
+          <h2>Pets</h2></div><label class="reviewed"><input type="checkbox"> Reviewed</label></div>
+          <div class="facts"><span class="fact quiet">Position changed</span></div>
+          <div class="versions"><section class="version"><h3>Before <span>Lines 23–24</span></h3><p class="clause">One cat is permitted with written approval.</p></section><section class="version"><h3>After <span>Lines 17–19</span></h3><p class="clause">One cat is permitted with written approval.</p></section></div>
+          
+          <details class="match"><summary>How these clauses were matched</summary><p>heading</p></details>
+        </article><article class="change" data-status="changed" id="change-7">
+          <div class="card-heading"><div><span class="status changed">changed</span>
+          <h2>Guests</h2></div><label class="reviewed"><input type="checkbox"> Reviewed</label></div>
+          <div class="facts"><span class="fact">14 days → 7 days</span></div>
+          <div class="versions"><section class="version"><h3>Before <span>Lines 17–19</span></h3><p class="clause">Overnight guests may stay for up to <del>14</del> days in a calendar month.</p></section><section class="version"><h3>After <span>Lines 20–22</span></h3><p class="clause">Overnight guests may stay for up to <ins>7</ins> days in a calendar month.</p></section></div>
+          
+          <details class="match"><summary>How these clauses were matched</summary><p>heading</p></details>
+        </article><article class="change" data-status="added" id="change-8">
+          <div class="card-heading"><div><span class="status added">added</span>
+          <h2>Package service</h2></div><label class="reviewed"><input type="checkbox"> Reviewed</label></div>
+          <div class="facts"><span class="fact">+$12.00 / month</span><span class="fact quiet">+$144.00 over 12 payments</span></div>
+          <div class="versions"><section class="version empty"><h3>Before</h3><p>This clause is absent.</p></section><section class="version"><h3>After <span>Lines 23–24</span></h3><p class="clause"><ins>A monthly package service fee of $12.00 applies to the unit.</ins></p></section></div>
+          <p class="assumption">Treats the single dollar amount as the clause price; check the quoted clause. Monthly annualization assumes 12 payments.</p>
+          <details class="match"><summary>How these clauses were matched</summary><p>new clause</p></details>
+        </article><article class="change" data-status="removed" id="change-9">
+          <div class="card-heading"><div><span class="status removed">removed</span>
+          <h2>Storage</h2></div><label class="reviewed"><input type="checkbox"> Reviewed</label></div>
+          <div class="facts"></div>
+          <div class="versions"><section class="version"><h3>Before <span>Lines 20–22</span></h3><p class="clause"><del>The resident may use one storage locker at no additional charge.</del></p></section><section class="version empty"><h3>After</h3><p>This clause is absent.</p></section></div>
+          
+          <details class="match"><summary>How these clauses were matched</summary><p>unmatched old clause</p></details>
+        </article></div>
+<p id="empty" class="no-results" hidden>No clauses match this search.</p>
+</main>
+<footer><p><strong>Read the source text before making a decision.</strong> The comparison finds edits; it does not decide what a clause means legally. Price calculations cover clauses with one explicit dollar amount and a clear payment frequency. They are not a total cost estimate.</p><p>The Reviewed checkboxes last only while this page is open. This report contains the quoted document text; share it as carefully as the originals.</p></footer>
+<script>
+const search=document.getElementById('search'), unchanged=document.getElementById('unchanged'), cards=[...document.querySelectorAll('.change')];
+function filter(){let visible=0;const query=search.value.toLocaleLowerCase();for(const card of cards){const show=(unchanged.checked||card.dataset.status!=='unchanged')&&card.textContent.toLocaleLowerCase().includes(query);card.hidden=!show;if(show)visible++;}document.getElementById('count').textContent=`Showing ${visible} of ${cards.length} clauses`;document.getElementById('empty').hidden=visible!==0;}
+search.addEventListener('input',filter);unchanged.addEventListener('change',filter);document.getElementById('print').addEventListener('click',()=>window.print());filter();
+</script>
+</body>
+</html>
